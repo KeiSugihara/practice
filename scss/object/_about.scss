@@ -1,0 +1,18 @@
+.about-item {
+  width: 100%;
+  text-align: center;
+  .text {
+    padding-top: 32px;
+  }
+
+  @include overTab {
+    display: flex;
+    img {
+      flex: 1;
+    }
+    .text {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+  }
+}

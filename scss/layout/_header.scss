@@ -1,0 +1,44 @@
+.header {
+  z-index: 2;
+  background-color: white;
+  /* 3種の神器でセンター合わせ */
+  align-items: center;
+  justify-content: space-between;
+  /* 追従 トップ画像をマージントップで下げる */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  @include overTab {
+    display: flex;
+  }
+  .header-logo {
+    margin-left: auto;
+    margin-right: auto;
+    width: 120px;
+    @include overTab {
+      width: 120px;
+      margin-left: 32px;
+    }
+  }
+
+  .nav-list {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    .nav-item {
+      a {
+        font-size: 14px;
+        display: block;
+        text-align: center;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+      @include overTab {
+        a {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

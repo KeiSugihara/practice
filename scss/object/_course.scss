@@ -1,0 +1,27 @@
+.course {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.course-list {
+  padding-left: 0;
+  .text {
+    text-align: center;
+  }
+
+  @include overTab {
+    display: flex;
+
+    .text {
+      text-align: center;
+    }
+  }
+}
+
+.course-item {
+  + .course-item {
+    @include overTab {
+      margin-left: 32px;
+    }
+  }
+}
